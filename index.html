@@ -5,27 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./styles/hack.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit:wght@300&family=Mulish:wght@300&family=Rethink+Sans&family=Roboto:ital@1&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
   <main>
     <section>
-      <div id="fondo">
-        <div>
+      <div class="mx-2"
+      id="fondo">
+        <div class="border-violet-400 border-8">
           <img src="./descarga.png" alt="Fondo">
         </div>
-        <div class="flex flex-col justify-center items-center gap-3">
-          <h2 class="text-black text-3xl font-bold p-3 bg-lime-500">Estados</h2>
-          <h2 class="text-black text-3xl font-bold p-3">Herramientas</h2>
-          <h2 class="text-black text-3xl font-bold p-3">Encargos</h2>
+        <div class="flex flex-col justify-center items-center gap-3 p-3 bg-black border-emerald-400 border-8">
+          <h2 class="text-black text-3xl font-bold p-3 bg-lime-400 px-14">Estados</h2>
+          <h2 class="text-black text-3xl font-bold p-3 bg-lime-400">Herramientas</h2>
+          <h2 class="text-black text-3xl font-bold p-3 bg-lime-400 px-11">Encargos</h2>
         </div>
       </div>
-        <div id="comandos">
-          <div>
+        <div class="mx-2"
+        id="comandos">
+          <div class="border-yellow-400 border-8">
             <img src="./descarga (1).png" alt="">
           </div>
-          <div>
-            <h2 class="text-black text-3xl font-bold p-3">Comandos</h2>
+          <div class="bg-black border-sky-400 border-8">
+            <p class="text-black text-xl font-bold p-3 bg-white m-1">Comandos.exe</p>
           </div>
       </div>
     </section>
