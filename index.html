@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+  *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .fuente{
+    font-family: "Press Start 2P";
+  }
+
+  .invalid{
+
+    border: 3px solid red;
+  }
+  .valid{
+    border: 3px solid rgb(36, 161, 36);
+  }
+
+</style>
+<body class="">
+  <main class="flex justify-center items-center h-[100vh] bg-black/80 ">
+    
+    <section class="m-w-[80%] h-[100%] flex justify-center items-center">
+      <div class="flex justify-center items-center z-10 "> 
+        <div class="w-full  absolute flex flex-col lg:flex-row justify-center items-center gap-2 z-1 ">
+          <img src="./resources/White hat.svg" alt="Fondo" class=" w-[80%] h-[250px] md:h-[280px] xl:h-[400px] 2xl:h-[470px] animate__animated animate__fadeIn">
+          <img src="./resources/Black hat.svg" alt="Fondo" class=" w-[80%] h-[250px] md:h-[280px] xl:h-[400px] 2xl:h-[470px] animate__animated animate__fadeIn">
+          <img src="./resources/Grey Hat.svg" alt="Fondo" class=" w-[80%] h-[250px] md:h-[280px] xl:h-[400px] 2xl:h-[470px] animate__animated animate__fadeIn">
+        </div>
+        <label for="nombre" class="z-3 animate__animated animate__zoomInDown absolute mb-32 text-white text-center text-2xl md:text-3xl lg:text-4xl font-bold fuente">Ingrese su nombre</label>
+        <input type="text" id="nombre" placeholder="Nombre" class="z-3 fuente absolute w-[70%] md:w-[50%] xl:w-[40%] h-[50px] rounded-lg px-4 flex justify-center items-center outline-0 animate__animated animate__fadeIn ">
+        <p class="hidden aviso absolute mt-32 md:mt-28 text-lg font-bold text-white bg-red-700/50 py-2 sm:px-4 md:px-6 text-center">La logitud debe ser entre 4 y 14 caracteres </p>
+    
+        <button class="absolute z-3 bottom-60 bg-black/60 text-white w-[50%] xl:w-[40%] h-20 px-6 hover:scale-105 border-0 animate__animated animate__zoomInUp text-xl font-bold fuente">Iniciar sesión</button>
+        
+    </section>
+
+    <section>
+      <div class=" hidden w-[90%] sm:w-[50%] lg:w-[40%] 2xl:w-[30%] h-[40%] rounded-2xl shadow-lg shadow-slate-300 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-2  md:p-4 flex flex-col flex justify-center items-center z-[999] bg-black">
+        <img src="./resources/hackeando.png" alt="" class="w-[100%] h-[70%] ">
+      </div>
+    </section>
+    
+    <section>
+      <div class="hidden w-[90%] sm:w-[50%] lg:w-[40%] 2xl:w-[30%] h-[40%] rounded-2xl shadow-lg shadow-slate-300 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-2  md:p-4 flex flex-col flex justify-center items-center z-[999] bg-black">
+        <img src="./resources/hackeado.png" alt="" class="w-[100%] h-[60%] ">
+      </div>
+    </section>
+
+    <section>
+      <div class="hidden w-[90%] sm:w-[50%] lg:w-[40%] 2xl:w-[30%] h-[40%] rounded-2xl shadow-lg shadow-slate-300 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-2  md:p-4 flex flex-col flex justify-center items-center z-[999] bg-black">
+        <img src="./resources/fallo.png" alt="" class="w-[100%] h-[60%] ">
+      </div>
+    </section>
+  </main>
+</body>
+<script src="./javascript/main.js"></script>
+</html>
