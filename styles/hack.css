@@ -1,0 +1,20 @@
+*{
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-style: normal;
+}
+
+#fondo{
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+#comandos{
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+#butons{
+    background-image: url("./images.jpeg");
+}
+
