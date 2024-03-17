@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/hack.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<body>
+  <main>
+    <section>
+      <div class="mx-2" id="fondo">
+      <div 
+        class="border-violet-400 border-8 bg-zinc-900 grid grid-rows-5 relative" 
+        id="terminal"
+      >
+        <article 
+          class="absolute w-full h-full top-0 left-0 bg-zinc-900/40 backdrop-blur grid grid-rows-5 hidden" 
+          id="terminalModal"
+        >
+          <section
+            id="modalText"
+            class="row-span-4 p-2 text-lime-400 font-medium"
+          >              
+          </section>
+
+          <button 
+            type="button"
+            class="w-1/3 h-5/6 justify-self-end mr-1 font-medium text-lime-100/80 hover:bg-lime-100/90 hover:text-lime-900 rounded-md row-span-1 max-h-52"
+            id="closeBtn"
+          >
+            Aceptar
+          </button>
+        </article>
+
+        <section 
+          id="textHistory" 
+          class="row-span-4 text-sky-100 text-sm font-light pl-1 leading-6 antialiased overflow-y-auto max-h-[244px] scrollbar"
+        >
+    
+        </section>
+
+        <section class="flex font-medium text-white text-xs items-center pl-1">
+          <p 
+            id="shell" 
+            class="text-lime-500"
+          ></p>
+          
+          <input 
+            type="text"
+            id="promt"
+            class="w-full bg-zinc-900 outline-none text-xs pl-2 font-medium text-lime-100/70"
+            autocomplete="off"
+            placeholder="--help"
+            autofocus
+          >
+          
+        </section>
+      </div>
+        <div id="butons"
+          class="flex flex-col justify-center items-center gap-3 p-3 bg-black border-emerald-400 border-8">
+          <button
+            class="text-black text-3xl font-bold p-3 bg-lime-400 px-14 hover:bg-lime-600 hover:font-black">Estados</button>
+          <button
+            class="text-black text-3xl font-bold p-3 bg-lime-400 px-4 hover:bg-lime-600 hover:font-black">Herramientas</button>
+          <button
+            class="text-black text-3xl font-bold p-3 bg-lime-400 px-11 hover:bg-lime-600 hover:font-black">Encargos</button>
+        </div>
+      </div>
+      <div class="mx-2" id="comandos">
+        <div class="border-yellow-400 border-8">
+          <img class="h-[350px] w-full" src="../hacking.jpg" alt="">
+        </div>
+        <div class="bg-black border-sky-400 border-8">
+          <p class="text-black text-xl font-bold p-3 bg-white m-1">Comandos.exe</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="../javascript/terminal.js"></script>
+</body>
+
+</html>
